@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigos - Crow-d</title>
+    <link rel="stylesheet" href="../home/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos específicos para a página de amigos */
+
+    </style>
+</head>
+<body>
+    <!-- HEADER / MENU DE NAVEGAÇÃO -->
+    <header>
+        <div class="logo">
+            <img src="../img/corvo.png" alt="Logo Crow-d" class="logo-img">
+            <span>Crow-d</span>
+        </div>
+        <nav class="main-nav">
+            <a href="../home/home.html"><i class="fas fa-home"></i> Feed</a>
+            <a href="../friends/amigos.html" class="active"><i class="fas fa-user-friends"></i> Amigos</a>
+            <a href="../mensagen/mensagens.html"><i class="fas fa-comment"></i> Mensagens</a>
+            <a href="../editprofile/edit-profile.html" class="profile-link"><i class="fas fa-user"></i> Perfil</a>
+        </nav>
+        <div class="user-actions">
+            <a href="../login/login.html" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Sair</a>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="main-container">
+        <!-- BARRA LATERAL ESQUERDA -->
+        <aside class="sidebar left-sidebar">
+            <div class="sidebar-section">
+                <h3>Atalhos Rápidos</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-star"></i> Meus Hobbies</a></li>
+                    <li><a href="../Club/grupos.html"><i class="fas fa-users"></i> Grupos</a></li>
+                    <li><a href="../events/eventos.html"><i class="fas fa-calendar"></i> Eventos</a></li>
+                    <li><a href="../config/config.html"><i class="fas fa-cog"></i> Configurações</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3>Filtrar por Hobby</h3>
+                <div class="hobby-tags">
+                    <span class="hobby-tag">Música</span>
+                    <span class="hobby-tag">Esportes</span>
+                    <span class="hobby-tag">Jogos</span>
+                    <span class="hobby-tag">Leitura</span>
+                    <span class="hobby-tag">Arte</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- CONTEÚDO CENTRAL -->
+        <main class="feed">
+            <h1 class="page-title"><i class="fas fa-user-friends"></i> Amigos</h1>
+            
+            <div class="action-buttons">
+                <button class="action-btn" id="addFriendBtn"><i class="fas fa-user-plus"></i> Adicionar Amigo</button>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar amigos por nome...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <!-- Solicitações de amizade -->
+            <div class="friends-section">
+                <h2><i class="fas fa-user-clock"></i> Solicitações Pendentes</h2>
+                
+                <div class="request-card">
+                    <img src="../img/Design sem nome2.png" alt="Avatar" class="request-avatar">
+                    <div class="request-info">
+                        <h3 class="request-name">Juliana Santos</h3>
+                        <p class="request-mutual">3 amigos em comum</p>
+                    </div>
+                    <div class="request-actions">
+                        <button class="request-btn">Aceitar</button>
+                        <button class="request-btn secondary">Recusar</button>
+                    </div>
+                </div>
+                
+                <div class="request-card">
+                    <img src="../img/Design sem nome2.png" alt="Avatar" class="request-avatar">
+                    <div class="request-info">
+                        <h3 class="request-name">Rafael Souza</h3>
+                        <p class="request-mutual">5 amigos em comum</p>
+                    </div>
+                    <div class="request-actions">
+                        <button class="request-btn">Aceitar</button>
+                        <button class="request-btn secondary">Recusar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Amigos online -->
+            <div class="friends-section">
+                <h2><i class="fas fa-circle text-success"></i> Amigos Online</h2>
+                
+                <div class="friends-grid">
+                    <div class="friend-card">
+                        <img src="../img/Design sem nome2.png" alt="Avatar" class="friend-avatar">
+                        <div class="friend-info">
+                            <h3 class="friend-name">Ana Silva</h3>
+                            <div class="friend-status">
+                                <span class="status-indicator status-online"></span>
+                                Online
+                            </div>
+                            <div class="friend-hobbies">
+                                <span class="hobby-tag">Música</span>
+                                <span class="hobby-tag">Arte</span>
+                            </div>
+                            <div class="friend-actions">
+                                <button class="friend-btn">Mensagem</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="friend-card">
+                        <img src="../img/Design sem nome2.png" alt="Avatar" class="friend-avatar">
+                        <div class="friend-info">
+                            <h3 class="friend-name">Pedro Almeida</h3>
+                            <div class="friend-status">
+                                <span class="status-indicator status-online"></span>
+                                Online
+                            </div>
+                            <div class="friend-hobbies">
+                                <span class="hobby-tag">Esportes</span>
+                                <span class="hobby-tag">Jogos</span>
+                            </div>
+                            <div class="friend-actions">
+                                <button class="friend-btn">Mensagem</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="friend-card">
+                        <img src="../img/Design sem nome2.png" alt="Avatar" class="friend-avatar">
+                        <div class="friend-info">
+                            <h3 class="friend-name">Carlos Mendes</h3>
+                            <div class="friend-status">
+                                <span class="status-indicator status-online"></span>
+                                Online
+                            </div>
+                            <div class="friend-hobbies">
+                                <span class="hobby-tag">Jogos</span>
+                                <span class="hobby-tag">Tecnologia</span>
+                            </div>
+                            <div class="friend-actions">
+                                <button class="friend-btn">Mensagem</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Todos os amigos -->
+            <div class="friends-section">
+                <h2><i class="fas fa-users"></i> Todos os Amigos</h2>
+                
+                <div class="friends-grid">
+                    <div class="friend-card">
+                        <img src="../img/Design sem nome2.png" alt="Avatar" class="friend-avatar">
+                        <div class="friend-info">
+                            <h3 class="friend-name">Ana Silva</h3>
+                            <div class="friend-status">
+                                <span class="status-indicator status-online"></span>
+                                Online
+                            </div>
+                            <div class="friend-hobbies">
+                                <span class="hobby-tag">Música</span>
+                                <span class="hobby-tag">Arte</span>
+                            </div>
+                            <div class="friend-actions">
+                                <button class="friend-btn">Mensagem</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="friend-card">
+                        <img src="../img/Design sem nome2.png" alt="Avatar" class="friend-avatar">
+                        <div class="friend-info">
+                            <h3 class="friend-name">Pedro Almeida</h3>
+                            <div class="friend-status">
+                                <span class="status-indicator status-online"></span>
+                                Online
+                            </div>
+                            <div class="friend-hobbies">
+                                <span class="hobby-tag">Esportes</span>
+                                <span class="hobby-tag">Jogos</span>
+                            </div>
+                            <div class="friend-actions">
+                                <button class="friend-btn">Mensagem</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="friend-card">
+                        <img src="../img/Design sem nome2.png" alt="Avatar" class="friend-avatar">
+                        <div class="friend-info">
+                            <h3 class="friend-name">Carlos Mendes</h3>
+                            <div class="friend-status">
+                                <span class="status-indicator status-online"></span>
+                                Online
+                            </div>
+                            <div class="friend-hobbies">
+                                <span class="hobby-tag">Jogos</span>
+                                <span class="hobby-tag">Tecnologia</span>
+                            </div>
+                            <div class="friend-actions">
+                                <button class="friend-btn">Mensagem</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="friend-card">
+                        <img src="../img/Design sem nome2.png" alt="Avatar" class="friend-avatar">
+                        <div class="friend-info">
+                            <h3 class="friend-name">Mariana Costa</h3>
+                            <div class="friend-status">
+                                <span class="status-indicator status-offline"></span>
+                                Offline
+                            </div>
+                            <div class="friend-hobbies">
+                                <span class="hobby-tag">Leitura</span>
+                                <span class="hobby-tag">Música</span>
+                            </div>
+                            <div class="friend-actions">
+                                <button class="friend-btn">Mensagem</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="friend-card">
+                        <img src="../img/Design sem nome2.png" alt="Avatar" class="friend-avatar">
+                        <div class="friend-info">
+                            <h3 class="friend-name">Lucas Oliveira</h3>
+                            <div class="friend-status">
+                                <span class="status-indicator status-offline"></span>
+                                Offline
+                            </div>
+                            <div class="friend-hobbies">
+                                <span class="hobby-tag">Jogos</span>
+                                <span class="hobby-tag">Esportes</span>
+                            </div>
+                            <div class="friend-actions">
+                                <button class="friend-btn">Mensagem</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="friend-card">
+                        <img src="../img/Design sem nome2.png" alt="Avatar" class="friend-avatar">
+                        <div class="friend-info">
+                            <h3 class="friend-name">Fernanda Lima</h3>
+                            <div class="friend-status">
+                                <span class="status-indicator status-offline"></span>
+                                Offline
+                            </div>
+                            <div class="friend-hobbies">
+                                <span class="hobby-tag">Arte</span>
+                                <span class="hobby-tag">Fotografia</span>
+                            </div>
+                            <div class="friend-actions">
+                                <button class="friend-btn">Mensagem</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- BARRA LATERAL DIREITA -->
+        <aside class="sidebar right-sidebar">
+            <div class="sidebar-section">
+                <h3>Sugestões de Amizade</h3>
+                <p class="section-subtitle">Baseado nos seus hobbies</p>
+                
+                <div class="suggestion">
+                    <img src="../img/Design sem nome2.png" alt="Foto de perfil" class="profile-pic">
+                    <div class="suggestion-info">
+                        <h4>Gabriela Santos</h4>
+                        <p>Música, Fotografia</p>
+                    </div>
+                    <button class="follow-btn">Adicionar</button>
+                </div>
+                
+                <div class="suggestion">
+                    <img src="../img/Design sem nome2.png" alt="Foto de perfil" class="profile-pic">
+                    <div class="suggestion-info">
+                        <h4>Bruno Ferreira</h4>
+                        <p>Jogos, Tecnologia</p>
+                    </div>
+                    <button class="follow-btn">Adicionar</button>
+                </div>
+                
+                <div class="suggestion">
+                    <img src="../img/Design sem nome2.png" alt="Foto de perfil" class="profile-pic">
+                    <div class="suggestion-info">
+                        <h4>Camila Rocha</h4>
+                        <p>Leitura, Arte</p>
+                    </div>
+                    <button class="follow-btn">Adicionar</button>
+                </div>
+                
+                <a href="#" class="see-more">Ver mais</a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Modal para adicionar amigo -->
+    <div class="modal" id="addFriendModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Adicionar Amigo</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form class="modal-form">
+                <div class="input-group">
+                    <label for="friendEmail">E-mail ou Nome de Usuário</label>
+                    <input type="text" id="friendEmail" placeholder="Digite o e-mail ou nome de usuário" required>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="request-btn secondary close-modal-btn">Cancelar</button>
+                    <button type="submit" class="request-btn">Enviar Solicitação</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+  <script src="scripts.js"></script>
+  <script src="../config/darkmode.js"></script>
+</body>
+</html>
